@@ -1,0 +1,22 @@
+<%- include ('partials/header') %>
+
+<%- include ('partials/navbar') %>
+
+<table>
+    <tr>
+        <th>Jogo</th>
+        <th>Preço</th>
+    </tr>
+
+    <% jogos.forEach(jogo => { %>
+    <tr>
+        <td><%= jogo.nome %></td>
+        <td><%= jogo.preco %></td>
+    </tr>
+
+    <%}) %>
+    
+</table>
+
+
+<%- include ('partials/footer') %>

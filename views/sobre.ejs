@@ -1,0 +1,21 @@
+<%- include ('partials/header') %>
+
+<%- include ('partials/navbar') %>
+
+<table>
+    <tr>
+        <th>Jogo</th>
+        <th>Descrição</th>
+    </tr>
+
+    <% sobre.forEach(sobre => { %>
+    <tr>
+        <td><%= sobre.nome %></td>
+        <td><%= sobre.descricao %></td>
+    </tr>
+
+    <%}) %>
+</table>
+
+
+<%- include ('partials/footer') %>

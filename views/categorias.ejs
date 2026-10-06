@@ -1,0 +1,19 @@
+<%- include ('partials/header') %>
+
+<%- include ('partials/navbar') %>
+
+<table>
+    <tr>
+        <th>Jogo</th>
+        <th>Categoria</th>
+    </tr>
+
+    <% categorias.forEach(categoria => { %>
+    <tr>
+        <td><%= categoria.nome %></td>
+        <td><%= categoria.tipoCategoria %></td>
+    </tr>
+
+    <%}) %>
+</table>
+<%- include ('partials/footer') %>
